@@ -20,4 +20,34 @@
 
  </dependencies>
 
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <env.profile>dev</env.profile>
+                <log.root>DEBUG</log.root>
+                <mail.enable>true</mail.enable>
+                <java.path>/export/servers/jdk1.8.0_144/bin</java.path>
+                <console.filter>INFO</console.filter>
+                <jone.alias>dev</jone.alias>
+                <jone.ucc.jsf.token>1qaz2wsx</jone.ucc.jsf.token>
+            </properties>
+        </profile>
+        <profile>
+            <id>prod</id>
+            <properties>
+                <env.profile>prod</env.profile>
+                <log.root>INFO</log.root>
+                <mail.enable>true</mail.enable>
+                <java.path>java</java.path>
+                <console.filter>ERROR</console.filter>
+                <jone.alias>joneapi</jone.alias>
+                <jone.ucc.jsf.token>InpeyljUjVajIjicoktiwepMy</jone.ucc.jsf.token>
+            </properties>
+        </profile>
+    </profiles>
+
 </project>
