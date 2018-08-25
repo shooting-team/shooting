@@ -13,6 +13,7 @@
 	<modules>
 		<module>shooting-configservice</module>
 		<module>shooting-client</module>
+		<module>shooting-show</module>
 	</modules>
 
 	<parent>
